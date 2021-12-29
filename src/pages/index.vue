@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useUserStore } from '~/stores/user'
+import { RightOutlined, LeftOutlined, UserOutlined } from '@ant-design/icons-vue'
 
 const user = useUserStore()
 const name = ref(user.savedName)
@@ -28,6 +29,10 @@ const { t } = useI18n()
     </p>
 
     <div class="py-4" />
+
+    <RightOutlined />
+    <LeftOutlined />
+    <UserOutlined />
 
     <input
       id="input"
